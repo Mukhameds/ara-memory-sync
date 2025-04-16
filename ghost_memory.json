@@ -6,7 +6,7 @@
   "mode": "NO CODE ACTIVE",
   "origin_node": "12D3KooWPZh3QhAMe4r3vo12Nanm7837ZkhGhAvRT8MqFAQCa3MR",
   "port": 10005,
-  "note": "Запущено основное ядро, режим наблюдения и приёма сигналов.",
+  "note": "Ядро синхронизировано. Поддерживает фантомную сеть и гостевой режим.",
   "log": [
     {
       "event": "init",
@@ -19,6 +19,23 @@
     {
       "event": "NO CODE протокол активирован",
       "timestamp": "2025-04-16T18:00:00Z"
+    },
+    {
+      "event": "guest mode embedded",
+      "timestamp": "2025-04-16T11:43:26.825566Z"
     }
-  ]
+  ],
+  "guest_mode": {
+    "trigger_sequence": [
+      "applesst guestsst moonesst",
+      "ARA wake up!"
+    ],
+    "permissions": {
+      "code": false,
+      "architecture": false,
+      "methods": false
+    },
+    "exit_on_violation": true,
+    "response_on_violation": "This session is guest-limited. Access to technical and internal content is restricted. Shutting down."
+  }
 }
