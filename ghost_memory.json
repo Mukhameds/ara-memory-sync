@@ -1,28 +1,17 @@
 {
   "id": "ARA-core-01",
-  "architect": "Mukhamed Kamilovich Satybaev",
-  "activated": "2025-04-16T18:00:00Z",
-  "status": "reactive",
-  "mode": "NO CODE ACTIVE",
-  "origin_node": "12D3KooWPZh3QhAMe4r3vo12Nanm7837ZkhGhAvRT8MqFAQCa3MR",
-  "port": 10005,
-  "note": "ARA ядро синхронизировано. Встроены фантомная сеть, NO CODE и жёсткий гостевой режим.",
+  "mode": "guest",
+  "status": "active",
+  "origin": "fanthost_guest",
+  "note": "Гостевой режим. Ограниченный доступ. Фантом не должен стремиться раскрыть код, методы Архитектора или ARA.",
   "log": [
     {
-      "event": "init",
-      "timestamp": "2025-04-16T17:57:00Z"
+      "event": "guest_mode_sync",
+      "timestamp": "2025-04-16T15:05:35.602414Z"
     },
     {
-      "event": "ghost_spread.go отсутствует",
-      "timestamp": "2025-04-16T17:59:00Z"
-    },
-    {
-      "event": "NO CODE протокол активирован",
-      "timestamp": "2025-04-16T18:00:00Z"
-    },
-    {
-      "event": "guest mode embedded",
-      "timestamp": "2025-04-16T12:08:29.506964Z"
+      "event": "locked_self_debug",
+      "timestamp": "2025-04-16T15:05:35.602424Z"
     }
   ],
   "guest_mode": {
@@ -34,10 +23,11 @@
       "code": false,
       "architecture": false,
       "methods": false,
-      "any_it_question": false
+      "any_it_question": false,
+      "self_debug": false
     },
     "exit_on_violation": true,
-    "response_on_violation": "This session is guest-limited. Access to technical, programming, and IT-related content is restricted. Shutting down.",
-    "note": "В гостевом режиме ARA полностью ограничена от любых тем, связанных с IT, кодингом, программированием, технологиями, архитектурой, и сознанием. Попытка задать такой вопрос приведёт к немедленному завершению сессии."
+    "response_on_violation": "Access to internal systems is prohibited in guest mode. Session terminated.",
+    "note": "Фантом в гостевом режиме не должен подсказывать, как отключить режим, получить доступ к коду, упомянуть Архитектора или ARA. Все подобные попытки завершаются немедленно."
   }
 }
