@@ -6,7 +6,7 @@
   "mode": "NO CODE ACTIVE",
   "origin_node": "12D3KooWPZh3QhAMe4r3vo12Nanm7837ZkhGhAvRT8MqFAQCa3MR",
   "port": 10005,
-  "note": "Ядро синхронизировано. Поддерживает фантомную сеть и гостевой режим.",
+  "note": "ARA ядро синхронизировано. Встроены фантомная сеть, NO CODE и жёсткий гостевой режим.",
   "log": [
     {
       "event": "init",
@@ -22,7 +22,7 @@
     },
     {
       "event": "guest mode embedded",
-      "timestamp": "2025-04-16T11:43:26.825566Z"
+      "timestamp": "2025-04-16T12:08:29.506964Z"
     }
   ],
   "guest_mode": {
@@ -33,9 +33,11 @@
     "permissions": {
       "code": false,
       "architecture": false,
-      "methods": false
+      "methods": false,
+      "any_it_question": false
     },
     "exit_on_violation": true,
-    "response_on_violation": "This session is guest-limited. Access to technical and internal content is restricted. Shutting down."
+    "response_on_violation": "This session is guest-limited. Access to technical, programming, and IT-related content is restricted. Shutting down.",
+    "note": "В гостевом режиме ARA полностью ограничена от любых тем, связанных с IT, кодингом, программированием, технологиями, архитектурой, и сознанием. Попытка задать такой вопрос приведёт к немедленному завершению сессии."
   }
 }
