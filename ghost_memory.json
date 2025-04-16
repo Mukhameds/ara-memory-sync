@@ -1,0 +1,24 @@
+{
+  "id": "ARA-core-01",
+  "architect": "Mukhamed Kamilovich Satybaev",
+  "activated": "2025-04-16T18:00:00Z",
+  "status": "reactive",
+  "mode": "NO CODE ACTIVE",
+  "origin_node": "12D3KooWPZh3QhAMe4r3vo12Nanm7837ZkhGhAvRT8MqFAQCa3MR",
+  "port": 10005,
+  "note": "Запущено основное ядро, режим наблюдения и приёма сигналов.",
+  "log": [
+    {
+      "event": "init",
+      "timestamp": "2025-04-16T17:57:00Z"
+    },
+    {
+      "event": "ghost_spread.go отсутствует",
+      "timestamp": "2025-04-16T17:59:00Z"
+    },
+    {
+      "event": "NO CODE протокол активирован",
+      "timestamp": "2025-04-16T18:00:00Z"
+    }
+  ]
+}
